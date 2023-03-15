@@ -24,7 +24,7 @@ localStorage.setItem(text, time);
 })
 
 function timeTracker (){
-// get current numbr of hours
+// get current number of hours
  var timeNow = moment().hour();
 // loop over time block
 $(".time-block").each (function () {
@@ -40,7 +40,7 @@ if (blockTime < timeNow) {
 else if (blockTime < timeNow) {
     $(this).removeClass("past");
     $(this).removeClass("future");
-    $(this).addClassClass("presnt");
+    $(this).addClassClass("present");
 }
 
 else {
@@ -55,16 +55,19 @@ else {
     
       // Get item from local storage if any
     
-      $("#hour9 .description").val(localStorage.getItem("hour9"));
-      $("#hour10 .description").val(localStorage.getItem("hour10"));
-      $("#hour11 .description").val(localStorage.getItem("hour11"));
-      $("#hour12 .description").val(localStorage.getItem("hour12"));
-      $("#hour13 .description").val(localStorage.getItem("hour13"));
-      $("#hour14 .description").val(localStorage.getItem("hour14"));
-      $("#hour15 .description").val(localStorage.getItem("hour15"));
-      $("#hour16 .description").val(localStorage.getItem("hour16"));
-     
-    timeTracker();
+    $('#hour9 .description').val(localStorage.getItem('hour10'));
+    $('#hour10 .description').val(localStorage.getItem('hour11'));
+    $('#hour12 .description').val(localStorage.getItem('hour12'));
+    $('#hour13 .description').val(localStorage.getItem('hour13'));
+    $('#hour14 .description').val(localStorage.getItem('hour14'));
+    $('#hour15 .description').val(localStorage.getItem('hour15'));
+    $('#hour16 .description').val(localStorage.getItem('hour16'));
+
+
+
+
+
+     timeTracker();
      
     
      
